@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">SOTD 生成器</view>
+  <view class="generator-form">
+    <block wx:for="{{displayItems}}" wx:key="id">
+      <view class="input-group">
+        <text class="label">{{item.name}}：</text>
+        <view class="display-box">
+          <text>{{item.value || '--'}}</text>
+        </view>
+      </view>
+    </block>
+    <button class="generate-btn" bindtap="onGenerate">生成</button>
+  </view>
+</view>

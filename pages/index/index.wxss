@@ -1,0 +1,64 @@
+/* index.wxss */
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.generator-form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.input-group {
+  margin: 0 20px 20px 20px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 16px;
+  color: #333;
+  white-space: nowrap;
+  width: 80px; /* 固定标签宽度 */
+}
+
+.display-box {
+  width: 180px; /* 固定显示框宽度 */
+  height: 36px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.display-box text {
+  font-size: 14px;
+  color: #333;
+}
+
+.generate-btn {
+  margin: 30px 20px 0 20px;
+  height: 44px;
+  background: #07c160;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

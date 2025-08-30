@@ -1,0 +1,33 @@
+<!--item-list.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="title">{{pageTitle}}</view>
+  </view>
+
+  <view class="content">
+    <view class="item-list">
+    <block wx:if="{{items.length > 0}}">
+      <view wx:for="{{items}}" wx:key="id" class="item-wrapper">
+        <movable-area class="movable-area">
+          <movable-view class="movable-view" direction="horizontal" out-of-bounds="{{false}}" x="{{0}}" inertia="{{true}}" data-id="{{item.id}}">
+            <view class="item" bindtap="onToggleItem" data-id="{{item.id}}">
+              <view class="checkbox {{item.done ? 'checked' : ''}}">
+                <text class="checkbox-inner" wx:if="{{item.done}}">✓</text>
+              </view>
+              <text class="item-name {{item.done ? 'done' : ''}}">{{item.name}}</text>
+            </view>
+            <view class="delete-btn" catchtap="onDeleteItem" data-id="{{item.id}}">删除</view>
+          </movable-view>
+        </movable-area>
+      </view>
+    </block>
+    <view class="empty-state" wx:else>
+      <text>{{emptyTip}}</text>
+    </view>
+  </view>
+  </view>
+  <view class="bottom-input">
+    <input class="add-input" type="text" placeholder="{{inputPlaceholder}}" value="{{newItemName}}" bindinput="onInputChange" bindconfirm="onAddItem"/>
+    <button class="add-btn" bindtap="onAddItem">添加</button>
+  </view>
+</view>

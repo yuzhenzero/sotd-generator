@@ -1,0 +1,42 @@
+<!-- profile.wxml -->
+<view class="container">
+  <view class="title">我的</view>
+  <view class="menu-list">
+    <view class="menu-section">
+      <view class="section-title">剃须用品</view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="pre">
+        <text>须前</text>
+      </view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="razor">
+        <text>剃须刀</text>
+      </view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="blade">
+        <text>刀片</text>
+      </view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="brush">
+        <text>剃须刷</text>
+      </view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="soap">
+        <text>剃须皂</text>
+      </view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="bowl">
+        <text>剃须碗</text>
+      </view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="post">
+        <text>须后</text>
+      </view>
+    </view>
+    <view class="menu-section">
+      <view class="section-title">设置</view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="generator-settings">
+        <text>生成器设置</text>
+      </view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="settings">
+        <text>个人设置</text>
+      </view>
+      <view class="menu-item" bindtap="onMenuClick" data-type="about">
+        <text>关于我们</text>
+      </view>
+    </view>
+  </view>
+</view>
