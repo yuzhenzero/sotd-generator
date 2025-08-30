@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
   <view class="title">SOTD 生成器</view>
   <view class="generator-form">
